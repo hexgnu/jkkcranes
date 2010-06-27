@@ -3,7 +3,6 @@ class CranesController < ApplicationController
   # GET /cranes.xml
   def index
     @cranes = Crane.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @cranes }
@@ -14,7 +13,7 @@ class CranesController < ApplicationController
   # GET /cranes/1.xml
   def show
     @crane = Crane.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @crane }

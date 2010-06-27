@@ -1,4 +1,5 @@
 JkkcranesCrm::Application.routes.draw do |map|
+  map.root :controller => "cranes"
   resources :cranes
 
   # The priority is based upon order of creation:
