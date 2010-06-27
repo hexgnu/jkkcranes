@@ -1,0 +1,25 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @crane.owner %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @crane.city %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @crane.comments %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @crane.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_crane_path(@crane) %> |
+<%= link_to 'Back', cranes_path %>

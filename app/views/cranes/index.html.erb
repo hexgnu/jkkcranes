@@ -1,0 +1,29 @@
+<h1>Listing cranes</h1>
+
+<table>
+  <tr>
+    <th>Owner</th>
+    <th>City</th>
+    <th>Comments</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cranes.each do |crane| %>
+  <tr>
+    <td><%= crane.owner %></td>
+    <td><%= crane.city %></td>
+    <td><%= crane.comments %></td>
+    <td><%= crane.date %></td>
+    <td><%= link_to 'Show', crane %></td>
+    <td><%= link_to 'Edit', edit_crane_path(crane) %></td>
+    <td><%= link_to 'Destroy', crane, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Crane', new_crane_path %>

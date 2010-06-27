@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  owner: MyString
+  city: MyString
+  comments: MyText
+  date: 2010-06-26 18:27:22
+
+two:
+  owner: MyString
+  city: MyString
+  comments: MyText
+  date: 2010-06-26 18:27:22
